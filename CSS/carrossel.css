@@ -1,0 +1,73 @@
+#carrossel{
+    margin: 0px auto;
+    width: 95%;
+    height: auto;
+    padding: 0px;
+    overflow: hidden; /* caso algum conteudo fique maior q a pag visivel, vai ser "escondido" */
+}
+#carrossel-itens{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+#carrossel-itens input{
+    display: none; /* esconde as bolinhas do radio */
+}
+.imagem-carrossel{
+    width: 25%;
+    height: auto;
+    position: relative;/* vai ser relativa ao elemento pai */
+    text-align: center;
+    transition: 0.5s;
+}
+.imagem-carrossel img{
+    width: 95%;
+}
+.navega-auto, .navega-manual{
+    position: absolute; /*Se comporta como o elemento pai*/
+    width: 95%;
+    margin-top: 47%;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-botao, .navega-auto div{
+    border: 2px solid #86c64f;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;/* faz o mause virar uma maozinha ao passao por cima */
+    transition: 0.3s;
+}
+.manual-botao:not(:last-child), .navega-auto div:not(:last-child){/*  == ele vai applicar em todos os elementos q tiverem esse class, manos no utimo */
+    margin-right: 20px;
+}
+.manual-botao:hover{
+    background-color: #86c64f;
+
+}
+
+#radio1:checked ~.navega-auto .auto-botao1{
+    background-color: #86c64f;
+}
+#radio2:checked ~.navega-auto .auto-botao2{
+    background-color: #86c64f;
+}
+#radio3:checked ~.navega-auto .auto-botao3{
+    background-color: #86c64f;
+}
+#radio4:checked ~.navega-auto .auto-botao4{
+    background-color: #86c64f;
+}
+
+#radio1:checked ~ .inicio{
+    margin-left: 0%;
+}
+#radio2:checked ~ .inicio{
+    margin-left: -25%;
+}
+#radio3:checked ~ .inicio{
+    margin-left: -50%;
+}
+#radio4:checked ~ .inicio{
+    margin-left: -75%;
+}

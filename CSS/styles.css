@@ -1,0 +1,169 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400&display=swap');
+
+@font-face {
+    font-family: 'CCRickVeitch';
+    src: url(../fontes/CCRickVeitch.ttf);
+}
+
+
+/* Geral */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Cabeçalho */
+header{
+    position: sticky;/* sticky == se move com a pag e ele fica fixo em certo ponto */
+    top: 0px; /* importante colocar o Top junto com o Position. Nesse caso, ele n foge da pag */
+    z-index: 99;/* define ordem dos elementos. 1 == mais atrás*/   
+    background-color: #d38a1f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+}
+h1{
+    font: 45px "Forte", cursive;
+    text-align: center;
+    color:#d38a1f;
+    margin: 30px 0px;
+}
+.titulo_inicial{
+    font-family: 30px "CCRickVeitch", sans-serif;
+    color: #ffffff;
+    padding-left: 10x;
+    margin: 0px;
+}
+nav ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none; /* tira a principal caracteristica da lista */
+}
+nav ul li{
+    display: inline;/* um do lado do outro */
+}
+nav ul li a{
+    padding: 15px 25px;/* 15 em cima e direito; 25 em baixo e esquerdo */
+    display: inline-block;/* n dá pra desorganizar a linha */
+    font: bold 18px 'Jost', sans-serif;
+    color:#ffffff;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    background-color: #fcbf64;
+    border-radius: 50px;
+    border-bottom: 2px solid #86c64f ;
+    font-style: bold;
+    color: #86c64f;
+}
+
+
+/* Textos */
+.card, #texto-pag3{
+    padding:20px;
+    margin: 65px;
+    background-color: #cfcfcf;
+    border-radius: 10px;
+}
+p{
+    font: 24px 'Jost', sans-serif;
+    text-align: center;
+}
+
+
+/* Grade de imagens */
+.grid_grupos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:40px; /* divide espaço entre elementos */
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 70px;
+}
+.grupo{
+    font: 18px 'Jost', sans-serif;
+    background-color: #86c64f;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.grupo img{
+    height: 420px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer{
+    margin-top: 20px;
+    padding: 5px;
+    background-color: #d38a1f;
+    font: 14px 'Just', sans-serif;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+
+/* PAGINA SOBRE */
+.conteudo{
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #fcbf64;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #d38a1f;
+}
+.conteudo img{
+    border: 3px solid #d38a1f;
+    width: 60%;
+    margin: 10px;
+    border-radius:10px;
+}
+.conteudo p{
+    margin:20px
+}
+
+button{
+    background-color: #86c64f;
+    font: 23px 'Jost', sans-serif;
+    font-weight: bold;
+    width: 400px;
+    height: 60px;
+    border: 2px solid #50762f;
+    border-radius: 10px;
+    margin: 40px;
+    cursor: pointer;
+}
+button:hover{/* Extra meu */
+    background-color: #4fc671;
+    border: 2px solid #245839;
+    color: #000000;
+    text-decoration: dotted underline #245839;
+    padding: 2px 2px;
+
+}
+#botao-pag2{
+    text-align: center;
+}
+
+
+
+/* PAGINA CAMINHADA24 */
+#banner img{
+    width: 75%;
+}
+video{
+    width: 55%;
+    border-radius: 15px;
+    margin-bottom: 70px;
+}
+#banner, #video-trajeto{
+    text-align: center;
+}
